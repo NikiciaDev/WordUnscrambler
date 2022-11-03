@@ -31,7 +31,7 @@ public final class Main {
                 } else {
                     System.out.println("Attempting to unscramble word!");
                     ResultContainer result_container = WordUtil.unscramble_word(new Word(scrambled_word));
-                    if(result_container.isEmpty()) {
+                    if(result_container.is_empty()) {
                         System.out.println("Failed to unscrambled word!");
                     }else {
                         System.out.println("Found " + result_container.get_matches().size() + " possible " + (result_container.get_matches().size() == 1 ? "match!" : "matches!"));
@@ -53,7 +53,7 @@ public final class Main {
 
     private static boolean load_words_alpha() {
         try {
-            WordUtil.set_words_alpha(FileUtil.load_dictionary_from_file(new File("C:\\Users\\LRieh\\Desktop\\words_alpha.txt")).toArray(new Word[0]));
+            WordUtil.set_words_alpha(FileUtil.load_dictionary_from_file(new File("src/words_alpha.txt")).toArray(new Word[0]));
             return true;
         }catch (IOException e) {
             System.out.println("An unexpected error occurred: " + e.getMessage());

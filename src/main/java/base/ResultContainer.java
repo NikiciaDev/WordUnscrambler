@@ -12,7 +12,7 @@ public final class ResultContainer {
         this.words_in_scrambled_word = new ArrayList<>();
     }
 
-    public boolean isEmpty() {
+    public boolean is_empty() {
         return matches.isEmpty() && words_in_scrambled_word.isEmpty();
     }
 
