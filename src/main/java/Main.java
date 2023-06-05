@@ -38,7 +38,7 @@ public final class Main {
                         if(result_container.get_matches().size() != 0) {
                             System.out.println(Arrays.toString(result_container.get_matches().toArray()));
                         }
-                        System.out.println("Found " + result_container.get_words_in_scrambled_word().size() + (result_container.get_words_in_scrambled_word().size() == 1 ? "word" : "words") + "inside of the scrambled word!");
+                        System.out.println("Found " + result_container.get_words_in_scrambled_word().size() + (result_container.get_words_in_scrambled_word().size() == 1 ? "word" : "words") + " inside of the scrambled word!");
                         if(result_container.get_words_in_scrambled_word().size() != 0) {
                             System.out.println(Arrays.toString(result_container.get_words_in_scrambled_word().toArray()));
                         }
