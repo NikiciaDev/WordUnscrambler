@@ -35,10 +35,11 @@ public final class Main {
                         System.out.println("Failed to unscrambled word!");
                     }else {
                         System.out.println("Found " + result_container.get_matches().size() + " possible " + (result_container.get_matches().size() == 1 ? "match!" : "matches!"));
-                        if(result_container.get_matches().size() != 0)
+                        if(result_container.get_matches().size() != 0) {
                             System.out.println(Arrays.toString(result_container.get_matches().toArray()));
+                        }
+                        System.out.println("Found " + result_container.get_words_in_scrambled_word().size() + " words inside of the scrambled word!");
                         if(result_container.get_words_in_scrambled_word().size() != 0) {
-                            System.out.println("Found " + result_container.get_words_in_scrambled_word().size() + " words inside of the scrambled word!");
                             System.out.println(Arrays.toString(result_container.get_words_in_scrambled_word().toArray()));
                         }
                         System.out.println("Ready for the next word!");
